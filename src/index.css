@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "SF Pro", "system-ui", "sans-serif";
+  --font-serif: "Playfair Display", "serif";
+  --color-deep-onyx: #0A0A0A;
+  --color-charcoal: #1A1A1A;
+  --color-champagne-gold: #D4AF37;
+  --color-brushed-platinum: #E5E4E2;
+}
+
+body {
+  @apply font-sans antialiased;
+}
+
+/* Glassmorphism Card Style */
+.glass-card {
+  @apply bg-charcoal/40 backdrop-blur-xl border border-white/10 shadow-2xl rounded-2xl p-8;
+}
